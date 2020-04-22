@@ -4,6 +4,8 @@
   "description": "A place for projects and experimentation.",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "npm run build && node index.js",
     "clear-build-cache": "rm -rf .cache/ dist/",
     "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
@@ -15,6 +17,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "express": "^4.17.1",
+    "gsap": "^3.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

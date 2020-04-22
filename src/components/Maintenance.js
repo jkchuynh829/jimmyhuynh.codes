@@ -7,6 +7,7 @@ const containerStyle = css`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  visibility: hidden;
 `;
 
 const headerStyle = css`
@@ -33,6 +34,7 @@ const renderSpans = (word) =>
 const Maintenance = () => {
   useEffect(() => {
     const tl = gsap.timeline();
+    tl.from(".container", { autoAlpha: 0 });
     tl.from("span", {
       duration: 1,
       y: -300,
@@ -62,7 +64,7 @@ const Maintenance = () => {
   });
 
   return (
-    <div css={containerStyle}>
+    <div className="container" css={containerStyle}>
       <h2 className="header" css={headerStyle}>
         <span className="word">{renderSpans("Currently")}</span>
         <span className="word">{renderSpans("tinkering...")}</span>

@@ -1,16 +1,15 @@
 import React from "react";
-import { css } from "@emotion/core";
 import { Link } from "@reach/router";
-import { black, white } from "../style/colors";
+import { css } from "@emotion/core";
+import { black, white } from "../../style/colors";
 
-const footerStyle = css`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+const navStyle = css`
+  display: grid;
+  grid-template-columns: 1fr 300px;
   background-color: ${black};
   color: ${white};
-  padding: 25px 50px;
+  padding: 0 50px;
+  height: 80px;
 
   a:link,
   a:visited,
@@ -19,13 +18,20 @@ const footerStyle = css`
   }
 `;
 
+const headingStyle = css`
+  display: flex;
+  align-items: center;
+  color: ${white};
+  font-size: 32px;
+  height: 100%;
+`;
+
 const buttonsContainer = css`
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
 
   li {
     color: ${white};
@@ -34,8 +40,11 @@ const buttonsContainer = css`
   }
 `;
 
-const Footer = () => (
-  <footer css={footerStyle}>
+const Nav = () => (
+  <nav css={navStyle}>
+    <Link to="/">
+      <header css={headingStyle}>Jimmy Huynh</header>
+    </Link>
     <ul css={buttonsContainer}>
       <li>
         <Link to="/blog">Blog</Link>
@@ -47,8 +56,7 @@ const Footer = () => (
         <Link to="/resume">Resume</Link>
       </li>
     </ul>
-    <section>Everything made by © Jimmy Huynh 2020</section>
-  </footer>
+  </nav>
 );
 
-export default Footer;
+export default Nav;

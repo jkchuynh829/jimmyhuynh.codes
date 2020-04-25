@@ -1,12 +1,12 @@
 import { css } from "@emotion/core";
-import { black, white } from "../../style/colors";
+import { primary1, white, secondary2, primary2 } from "../../style/colors";
 
 export const navStyle = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${black};
+  background-color: ${primary1};
   color: ${white};
   padding: 0 50px;
   height: 80px;
@@ -42,10 +42,24 @@ export const listStyle = css`
   list-style: none;
   display: flex;
   align-items: center;
+  height: 100%;
 
   li {
     color: ${white};
     font-size: 20px;
-    margin: 0 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 300ms ease-out, color 300ms ease-out;
+
+    :hover {
+      color: ${primary2};
+      background: ${secondary2};
+      font-weight: 700;
+      transition: background 300ms ease-in;
+    }
   }
 `;

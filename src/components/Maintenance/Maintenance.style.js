@@ -1,5 +1,5 @@
 import { css } from "@emotion/core";
-import { white, black } from "../../style/colors";
+import { white, primary1 } from "../../style/colors";
 
 export const containerStyle = css`
   display: flex;
@@ -7,7 +7,7 @@ export const containerStyle = css`
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-color: ${black};
+  background-color: ${primary1};
   color: ${white};
 
   .rocket {

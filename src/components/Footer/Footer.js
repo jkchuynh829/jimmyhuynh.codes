@@ -1,14 +1,14 @@
 import React from "react";
 import { css } from "@emotion/core";
 import { Link } from "@reach/router";
-import { black, white } from "../../style/colors";
+import { primary1, white } from "../../style/colors";
 
 const footerStyle = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${black};
+  background-color: ${primary1};
   color: ${white};
   padding: 25px 50px;
 

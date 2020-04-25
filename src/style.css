@@ -4,8 +4,16 @@
   padding: 0;
 }
 
-body {
-  font-family: "Fira Code", monospace;
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  text-transform: uppercase;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 300;
 }
 
 a {

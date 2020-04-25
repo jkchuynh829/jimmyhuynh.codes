@@ -7,7 +7,7 @@ const Maintenance = () => {
     <div className="container" css={containerStyle}>
       <div>
         <h2 className="header" css={headerStyle}>
-          Come back soon!
+          WORK IN PROGRESS
         </h2>
       </div>
       <div className="rocket">

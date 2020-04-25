@@ -22,6 +22,6 @@ export const headerStyle = css`
   text-align: center;
 
   @media only screen and (min-width: 650px) {
-    font-size: 60px;
+    font-size: 52px;
   }
 `;

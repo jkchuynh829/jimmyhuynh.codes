@@ -17,6 +17,10 @@ const footerStyle = css`
   a:hover {
     color: ${white};
   }
+
+  section {
+    text-align: center;
+  }
 `;
 
 const buttonsContainer = css`
@@ -26,6 +30,7 @@ const buttonsContainer = css`
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  text-align: center;
 
   li {
     color: ${white};
@@ -47,7 +52,7 @@ const Footer = () => (
         <Link to="/resume">Resume</Link>
       </li>
     </ul>
-    <section>Everything made by © Jimmy Huynh 2020</section>
+    <section>Everything © Jimmy Huynh 2020</section>
   </footer>
 );
 

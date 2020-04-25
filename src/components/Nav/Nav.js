@@ -1,51 +1,13 @@
 import React from "react";
 import { Link } from "@reach/router";
-import { css } from "@emotion/core";
-import { black, white } from "../../style/colors";
-
-const navStyle = css`
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  background-color: ${black};
-  color: ${white};
-  padding: 0 50px;
-  height: 80px;
-
-  a:link,
-  a:visited,
-  a:hover {
-    color: ${white};
-  }
-`;
-
-const headingStyle = css`
-  display: flex;
-  align-items: center;
-  color: ${white};
-  font-size: 32px;
-  height: 100%;
-`;
-
-const buttonsContainer = css`
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-
-  li {
-    color: ${white};
-    font-size: 20px;
-    margin: 0 15px;
-  }
-`;
+import { navStyle, headingStyle, listStyle } from "./Nav.style";
 
 const Nav = () => (
   <nav css={navStyle}>
-    <Link to="/">
-      <header css={headingStyle}>Jimmy Huynh</header>
-    </Link>
-    <ul css={buttonsContainer}>
+    <header css={headingStyle}>
+      <Link to="/">Jimmy Huynh</Link>
+    </header>
+    <ul css={listStyle}>
       <li>
         <Link to="/blog">Blog</Link>
       </li>

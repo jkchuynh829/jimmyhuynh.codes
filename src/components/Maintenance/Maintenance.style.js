@@ -6,9 +6,13 @@ export const containerStyle = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 65vh;
   background-color: ${primary1};
   color: ${white};
+
+  @media only screen and (min-width: 650px) {
+    height: 80vh;
+  }
 
   .rocket {
     height: 100px;
@@ -22,7 +26,6 @@ export const headerStyle = css`
   text-align: center;
 
   @media only screen and (min-width: 650px) {
-    height: 80vh;
     font-size: 52px;
   }
 `;

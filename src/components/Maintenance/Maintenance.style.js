@@ -6,7 +6,7 @@ export const containerStyle = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
   background-color: ${primary1};
   color: ${white};
 
@@ -22,6 +22,7 @@ export const headerStyle = css`
   text-align: center;
 
   @media only screen and (min-width: 650px) {
+    height: 80vh;
     font-size: 52px;
   }
 `;
